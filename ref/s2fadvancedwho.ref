@@ -1,0 +1,255 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v280",
+        "intent": "1.0"
+    },
+    "user_defined": {},
+    "var": {
+        "Expressive_Verb": "(說|說說|開說|照說|接說|反說|妙說|怨說|老說|解說|問說|甫說|還說|答說|教說|拗說|論說|聊說|嗔說|前說|唸說|扯說|笑說|吵說|氣說|常說|紛說|更說|得說|急說|騙說|酸說|邊說|認說|斷說|難得說|回說|猛說|寫說|忙說|微說|嘆說|搶說|哭說|正說|推說|瞪說|掰說|抄說|指說|回|想回|怒回|忙回|笑回|爽回|慌答|冷答|忙答|稱|怒稱|謙稱|佯稱|答稱|供稱|改稱|謊稱|更稱|回稱|聲稱|宣稱|常想|直想|嘟嚷著|怒斥著|喊叫著|說著|叨唸著|喊著|念|叼念|唸|邊唸|猛唸|寫下|喊|高喊|大喊|笑喊|直喊|怒喊|猛喊|齊喊|驚喊|慟喊|哀喊|猛讚|互讚|嗆|怒嗆|酸嗆|反嗆|笑嗆|開嗆|大嗆|直嗆|嗔叫|直叫|暗叫|表達出|供出|唸出|道|嗔道|笑道|叫道|歎道|吼道|喊道|暗虧|直虧|斥|喝斥|直斥|怒斥|笑斥|忙問|發問|偷問|回問|笑問|直問|追問|猛問|哭問|怒問|暗批|反批|痛批|笑呼|急呼|疾呼|嬌呼|狂呼|齊呼|直言|斷言|怒言|笑言|描述|闡述|誇|直誇|怒罵|更罵|喝罵|強調|怒指|允諾|喝令|笑談|嗆明|呼籲|道賀|叫嚷|急駁|哭唱|想過|覺得|猛酸|哭求|鼓吹|怒飆|怒諷|勸|講|怨|曰)"
+    },
+    "utterance": {
+        "瑪麗最喜歡張三": {
+            "id": "f79aca1f-def5-48ad-9b87-6499c396913c",
+            "pos": "<ENTITY_person>瑪麗</ENTITY_person><MODIFIER>最</MODIFIER><ACTION_verb>喜歡</ACTION_verb><ENTITY_person>張三</ENTITY_person>",
+            "lexy": {
+                "喜歡": [
+                    "愛戴",
+                    "熱愛",
+                    "喜歡",
+                    "憐愛",
+                    "愛過",
+                    "喜愛",
+                    "崇拜",
+                    "疼愛",
+                    "愛護",
+                    "深愛",
+                    "相愛"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<(?:MODIFIER|ModifierP)>[^<]+</(?:MODIFIER|ModifierP)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person>"
+        },
+        "瑪麗不喜歡王小明": {
+            "id": "fbc5e277-4147-476c-91c7-88b5769ab449",
+            "pos": "<ENTITY_person>瑪麗</ENTITY_person><FUNC_negation>不</FUNC_negation><ACTION_verb>喜歡</ACTION_verb><ENTITY_person>王小明</ENTITY_person>",
+            "lexy": {
+                "喜歡": [
+                    "喜歡",
+                    "相愛",
+                    "崇拜",
+                    "愛過",
+                    "熱愛",
+                    "疼愛",
+                    "愛戴",
+                    "憐愛",
+                    "愛護",
+                    "深愛",
+                    "喜愛"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?<FUNC_negation>[^<]+</FUNC_negation><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person>"
+        },
+        "瑪莉見過張三好幾次": {
+            "id": "dd6bcd61-2b7d-4510-a604-6e59526066de",
+            "pos": "<ENTITY_oov>瑪莉</ENTITY_oov><VerbP>見過</VerbP><ENTITY_person>張三</ENTITY_person><FUNC_degreeHead>好</FUNC_degreeHead><CLAUSE_HowQ>幾</CLAUSE_HowQ><ACTION_eventQuantifier>次</ACTION_eventQuantifier>",
+            "lexy": {
+                "見過": [
+                    "再見過",
+                    "碰過",
+                    "聽說過",
+                    "遇到過",
+                    "看過",
+                    "遇過",
+                    "接觸過",
+                    "聽過",
+                    "看到過",
+                    "見過",
+                    "問過"
+                ]
+            },
+            "pattern": "<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person><FUNC_degreeHead>[^<]+</FUNC_degreeHead><CLAUSE_HowQ>[^<]+</CLAUSE_HowQ><ACTION_eventQuantifier>[^<]+</ACTION_eventQuantifier>"
+        },
+        "李四不敢開王小明的刀": {
+            "id": "2b16c0be-6f5f-413b-b400-d3d661fe88d0",
+            "pos": "<ENTITY_person>李四</ENTITY_person><FUNC_negation>不</FUNC_negation><ACTION_verb>敢</ACTION_verb><ACTION_verb>開</ACTION_verb><ENTITY_person>王小明</ENTITY_person><FUNC_inner>的</FUNC_inner><ENTITY_nouny>刀</ENTITY_nouny>",
+            "lexy": {
+                "敢": [
+                    "敢過",
+                    "願意",
+                    "許",
+                    "敢",
+                    "容",
+                    "吝於",
+                    "屑",
+                    "忍心",
+                    "敢為",
+                    "願",
+                    "敢做"
+                ],
+                "開": [
+                    "有開",
+                    "原開",
+                    "正開",
+                    "改開",
+                    "集搬",
+                    "到開",
+                    "站開",
+                    "開",
+                    "開過",
+                    "開了",
+                    "發開"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?<FUNC_negation>[^<]+</FUNC_negation><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>"
+        },
+        "李四連這本書都不肯給張三": {
+            "id": "9dafe284-d321-4edc-a46b-643f03874040",
+            "pos": "<ENTITY_person>李四</ENTITY_person><ENTITY_nouny>連</ENTITY_nouny><ENTITY_DetPhrase>這本</ENTITY_DetPhrase><ENTITY_noun>書</ENTITY_noun><QUANTIFIER>都</QUANTIFIER><FUNC_negation>不</FUNC_negation><ACTION_verb>肯</ACTION_verb><ACTION_verb>給</ACTION_verb><ENTITY_person>張三</ENTITY_person>",
+            "lexy": {
+                "給": [
+                    "發放",
+                    "資助",
+                    "供給",
+                    "給",
+                    "交給",
+                    "給阿",
+                    "提供",
+                    "分給",
+                    "給老",
+                    "帶給",
+                    "給聖"
+                ],
+                "肯": [
+                    "小肯",
+                    "肯縣",
+                    "肯亦",
+                    "驚羽",
+                    "肯鎮",
+                    "叩斯",
+                    "有肯",
+                    "肯",
+                    "到肯",
+                    "肯號",
+                    "肯城"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<QUANTIFIER>[^<]+</QUANTIFIER>)?<FUNC_negation>[^<]+</FUNC_negation><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person>"
+        },
+        "老王在會見之前就解雇了張三": {
+            "id": "9243777c-bd8f-46f8-aa9c-8603f18774c3",
+            "pos": "<ENTITY_nouny>老王</ENTITY_nouny><FUNC_inner>在</FUNC_inner><MODAL>會</MODAL><ACTION_verb>見</ACTION_verb><TIME_justtime>之前</TIME_justtime><FUNC_inner>就</FUNC_inner><VerbP>解雇了</VerbP><ENTITY_person>張三</ENTITY_person>",
+            "lexy": {
+                "見": [
+                    "見得",
+                    "看見",
+                    "見到",
+                    "見",
+                    "看出",
+                    "見建",
+                    "見了",
+                    "見圓",
+                    "見古",
+                    "看到",
+                    "見美"
+                ],
+                "解雇了": [
+                    "炒蜆",
+                    "動ㄘ",
+                    "帶逛",
+                    "惹哭",
+                    "譯亞",
+                    "騷擾過",
+                    "換掉了",
+                    "接捕了",
+                    "攔胡",
+                    "補槍",
+                    "解雇了"
+                ]
+            },
+            "pattern": "<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?(?:<MODAL>[^<]+</MODAL>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>(?:<TIME_(?:holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(?:holiday|justtime|day|week|month|season|year|decade)>){1,10}(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person>"
+        },
+        "李四從來不看批評王小明的文章": {
+            "id": "44a1ee4d-edd0-49f9-abf2-e1833c29e318",
+            "pos": "<ENTITY_person>李四</ENTITY_person><TIME_justtime>從來</TIME_justtime><FUNC_negation>不</FUNC_negation><ACTION_verb>看</ACTION_verb><ACTION_verb>批評</ACTION_verb><ENTITY_person>王小明</ENTITY_person><FUNC_inner>的</FUNC_inner><ENTITY_noun>文章</ENTITY_noun>",
+            "lexy": {
+                "看": [
+                    "看戲",
+                    "看",
+                    "探看",
+                    "收看",
+                    "觀看",
+                    "光顧",
+                    "看顧",
+                    "探望",
+                    "看護",
+                    "看守",
+                    "看望"
+                ],
+                "批評": [
+                    "譴責",
+                    "痛斥",
+                    "責難",
+                    "狠批",
+                    "怒斥",
+                    "批評",
+                    "斥責",
+                    "痛批",
+                    "抨擊",
+                    "喝斥",
+                    "質疑"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<TIME_(?:holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(?:holiday|justtime|day|week|month|season|year|decade)>){1,10}<FUNC_negation>[^<]+</FUNC_negation><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>"
+        },
+        "李四相信因為老闆罵了張三，每個員工都很生氣": {
+            "id": "2e367323-4987-4b0a-b060-b534173d5c46",
+            "pos": "<ENTITY_person>李四</ENTITY_person><ACTION_verb>相信</ACTION_verb><FUNC_inter>因為</FUNC_inter><ENTITY_noun>老闆</ENTITY_noun><VerbP>罵了</VerbP><ENTITY_person>張三</ENTITY_person><ENTITY_DetPhrase>每個</ENTITY_DetPhrase><ENTITY_noun>員工</ENTITY_noun><QUANTIFIER>都</QUANTIFIER><MODIFIER>很</MODIFIER><ACTION_verb>生氣</ACTION_verb>",
+            "lexy": {
+                "生氣": [
+                    "暴怒",
+                    "動怒",
+                    "煮開",
+                    "燒開",
+                    "生氣",
+                    "激怒",
+                    "滾開",
+                    "煮沸",
+                    "發怒",
+                    "觸怒",
+                    "沮喪"
+                ],
+                "相信": [
+                    "聽信",
+                    "認同",
+                    "覺得",
+                    "明白",
+                    "確信",
+                    "懷疑",
+                    "意識到",
+                    "相信",
+                    "知道",
+                    "篤信",
+                    "深信"
+                ],
+                "罵了": [
+                    "臭罵",
+                    "痛扁",
+                    "教訓了",
+                    "責罵",
+                    "痛罵",
+                    "痛打",
+                    "甩了",
+                    "罵了",
+                    "痛打了",
+                    "嚇到",
+                    "揍了"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_person>([^<]+)</ENTITY_person><ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<QUANTIFIER>[^<]+</QUANTIFIER>)?(?:<(?:MODIFIER|ModifierP)>[^<]+</(?:MODIFIER|ModifierP)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
