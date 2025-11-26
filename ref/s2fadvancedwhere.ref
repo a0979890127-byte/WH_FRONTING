@@ -1,0 +1,176 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v280",
+        "intent": "1.0"
+    },
+    "user_defined": {},
+    "var": {
+        "Expressive_Verb": "(說|說說|開說|照說|接說|反說|妙說|怨說|老說|解說|問說|甫說|還說|答說|教說|拗說|論說|聊說|嗔說|前說|唸說|扯說|笑說|吵說|氣說|常說|紛說|更說|得說|急說|騙說|酸說|邊說|認說|斷說|難得說|回說|猛說|寫說|忙說|微說|嘆說|搶說|哭說|正說|推說|瞪說|掰說|抄說|指說|回|想回|怒回|忙回|笑回|爽回|慌答|冷答|忙答|稱|怒稱|謙稱|佯稱|答稱|供稱|改稱|謊稱|更稱|回稱|聲稱|宣稱|常想|直想|嘟嚷著|怒斥著|喊叫著|說著|叨唸著|喊著|念|叼念|唸|邊唸|猛唸|寫下|喊|高喊|大喊|笑喊|直喊|怒喊|猛喊|齊喊|驚喊|慟喊|哀喊|猛讚|互讚|嗆|怒嗆|酸嗆|反嗆|笑嗆|開嗆|大嗆|直嗆|嗔叫|直叫|暗叫|表達出|供出|唸出|道|嗔道|笑道|叫道|歎道|吼道|喊道|暗虧|直虧|斥|喝斥|直斥|怒斥|笑斥|忙問|發問|偷問|回問|笑問|直問|追問|猛問|哭問|怒問|暗批|反批|痛批|笑呼|急呼|疾呼|嬌呼|狂呼|齊呼|直言|斷言|怒言|笑言|描述|闡述|誇|直誇|怒罵|更罵|喝罵|強調|怒指|允諾|喝令|笑談|嗆明|呼籲|道賀|叫嚷|急駁|哭唱|想過|覺得|猛酸|哭求|鼓吹|怒飆|怒諷|勸|講|怨|曰)"
+    },
+    "utterance": {
+        "張三應該在台北離開": {
+            "id": "9b8945a7-6a45-4bec-b44a-6bac65bd5b3c",
+            "pos": "<ENTITY_person>張三</ENTITY_person><MODAL>應該</MODAL><FUNC_inner>在</FUNC_inner><LOCATION>台北</LOCATION><ACTION_verb>離開</ACTION_verb>",
+            "lexy": {
+                "離開": [
+                    "離職",
+                    "離開",
+                    "駛離",
+                    "放棄",
+                    "離任",
+                    "離港",
+                    "出走",
+                    "撤出",
+                    "分離",
+                    "離休",
+                    "離去"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<MODAL>[^<]+</MODAL>)?(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<LOCATION>([^<]+)</LOCATION><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        },
+        "張三在台北看到了馬莉": {
+            "id": "0d8a9620-8a56-46b0-a984-bd54c5475b04",
+            "pos": "<ENTITY_person>張三</ENTITY_person><FUNC_inner>在</FUNC_inner><LOCATION>台北</LOCATION><VerbP>看到了</VerbP><ENTITY_person>馬莉</ENTITY_person>",
+            "lexy": {
+                "看到了": [
+                    "睇見",
+                    "看見",
+                    "瞧見",
+                    "發現了",
+                    "見到了",
+                    "看見了",
+                    "見到",
+                    "瞅見",
+                    "聽到了",
+                    "遇到了",
+                    "看到了"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<LOCATION>([^<]+)</LOCATION><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>(?:<ENTITY_person>[^<]+</ENTITY_person>)?"
+        },
+        "李四在台北不想教瑪莉": {
+            "id": "7c7a13bd-1035-4b59-972f-491175870009",
+            "pos": "<ENTITY_person>李四</ENTITY_person><FUNC_inner>在</FUNC_inner><LOCATION>台北</LOCATION><FUNC_negation>不</FUNC_negation><ACTION_verb>想</ACTION_verb><ACTION_verb>教</ACTION_verb><ENTITY_nouny>瑪莉</ENTITY_nouny>",
+            "lexy": {
+                "想": [
+                    "想拿",
+                    "想望",
+                    "冥想",
+                    "想到",
+                    "假想",
+                    "想像",
+                    "想念",
+                    "想出",
+                    "想要",
+                    "回想",
+                    "想"
+                ],
+                "教": [
+                    "教席",
+                    "選修了",
+                    "教給",
+                    "教授",
+                    "教導",
+                    "教了",
+                    "教程",
+                    "教過",
+                    "教",
+                    "教會了",
+                    "講授"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<LOCATION>([^<]+)</LOCATION><FUNC_negation>[^<]+</FUNC_negation><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>(?:<ENTITY_person>[^<]+</ENTITY_person>)?"
+        },
+        "張三在台北遇到瑪莉很多次": {
+            "id": "c02f2764-ac56-4c9d-9a83-56df2e94e545",
+            "pos": "<ENTITY_person>張三</ENTITY_person><FUNC_inner>在</FUNC_inner><LOCATION>台北</LOCATION><ACTION_verb>遇到</ACTION_verb><ENTITY_nouny>瑪莉</ENTITY_nouny><DegreeP>很多次</DegreeP>",
+            "lexy": {
+                "遇到": [
+                    "碰見",
+                    "相聚",
+                    "相逢",
+                    "相見",
+                    "會合",
+                    "遇到",
+                    "撞見",
+                    "相遇",
+                    "遇見",
+                    "碰到",
+                    "遭遇"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<LOCATION>([^<]+)</LOCATION><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><DegreeP>[^<]+</DegreeP>"
+        },
+        "老王在台北讀完文件後就丟掉了": {
+            "id": "be191b86-2137-4e52-85c6-f28ff5027b4f",
+            "pos": "<ENTITY_nouny>老王</ENTITY_nouny><FUNC_inner>在</FUNC_inner><LOCATION>台北</LOCATION><VerbP>讀完</VerbP><ENTITY_oov>文件</ENTITY_oov><RANGE_locality>後</RANGE_locality><FUNC_inner>就</FUNC_inner><VerbP>丟掉了</VerbP>",
+            "lexy": {
+                "讀完": [
+                    "寫完",
+                    "念完",
+                    "讀完",
+                    "讀了",
+                    "讀完了",
+                    "讀過",
+                    "唸完",
+                    "唸過",
+                    "讀到",
+                    "念了",
+                    "修完"
+                ],
+                "丟掉了": [
+                    "亂掉",
+                    "丟開",
+                    "弄丟",
+                    "割棄",
+                    "丟掉了",
+                    "亂丟",
+                    "廢棄",
+                    "丟棄",
+                    "甩掉",
+                    "丟失",
+                    "扔掉"
+                ]
+            },
+            "pattern": "<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<LOCATION>([^<]+)</LOCATION><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><RANGE_(?:locality|period)>[^<]+</RANGE_(?:locality|period)>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        },
+        "李四在台北拍的照片被瑪莉看到了": {
+            "id": "574d322b-3f28-4680-9ddf-0e2ba72ae70e",
+            "pos": "<ENTITY_person>李四</ENTITY_person><FUNC_inner>在</FUNC_inner><LOCATION>台北</LOCATION><ACTION_verb>拍</ACTION_verb><FUNC_inner>的</FUNC_inner><ENTITY_noun>照片</ENTITY_noun><ACTION_lightVerb>被</ACTION_lightVerb><ENTITY_nouny>瑪莉</ENTITY_nouny><VerbP>看到了</VerbP>",
+            "lexy": {
+                "拍": [
+                    "重拍",
+                    "拍攝了",
+                    "拍過",
+                    "拍片",
+                    "拍完",
+                    "拍了",
+                    "拍出",
+                    "拍",
+                    "拍手",
+                    "想拍",
+                    "拍攝"
+                ],
+                "看到了": [
+                    "聽到了",
+                    "看到了",
+                    "看見",
+                    "見到",
+                    "見到了",
+                    "遇到了",
+                    "看見了",
+                    "瞅見",
+                    "發現了",
+                    "瞧見",
+                    "睇見"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<LOCATION>([^<]+)</LOCATION><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><ACTION_lightVerb>[^<]+</ACTION_lightVerb><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>[^<]+</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
