@@ -1,0 +1,265 @@
+{
+    "debug": true,
+    "server": "https://api.droidtown.co",
+    "username": "a0979890127@gmail.com",
+    "api_key": "NYQYlYcSN6kWzR$Wwx^b7NPb7vzLxJZ",
+    "version": "v280",
+    "loki_key": "SCk@VsPli%7B*Y!Pe1uJLhuClm#rQ+h",
+    "loki_project": "WH_FRONTING",
+    "copytoaster_key": "",
+    "copytoaster_category": [],
+    "llm_prompt": {
+        "system": "You are an assistant.",
+        "assistant": "",
+        "user": "answer the question '{{INPUT}}' in Mandarin Chinese used in Taiwan.",
+        "resp_header": [
+            "我的資料庫沒有相關的資料，但網路資料顯示..."
+        ]
+    },
+    "chatbot_mode": false,
+    "chatbot_prompt": {
+        "sf2": {
+            "prompt": {},
+            "document": {}
+        },
+        "s2f": {
+            "prompt": {},
+            "document": {}
+        },
+        "ADVANCED": {
+            "prompt": {},
+            "document": {}
+        },
+        "s2fadvancedwhere": {
+            "prompt": {},
+            "document": {}
+        },
+        "s2fadvancedwho": {
+            "prompt": {},
+            "document": {}
+        },
+        "s2fadvancedwhat": {
+            "prompt": {},
+            "document": {}
+        }
+    },
+    "utterance_count": {
+        "sf2": {
+            "[馬小莉]不喜歡[王小明]": {
+                "contentword": {
+                    "喜歡": 1
+                },
+                "noun": {},
+                "verb": {
+                    "喜歡": 1
+                },
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {
+                    "馬小莉": 1,
+                    "王小明": 1
+                },
+                "modifier": {},
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "[你]買了[衛生紙]": {
+                "contentword": {
+                    "買了": 1,
+                    "衛生紙": 1
+                },
+                "noun": {
+                    "衛生紙": 1
+                },
+                "verb": {
+                    "買了": 1
+                },
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {},
+                "modifier": {},
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "[馬小莉][最]喜歡[王小明]": {
+                "contentword": {
+                    "最": 1,
+                    "喜歡": 1
+                },
+                "noun": {},
+                "verb": {
+                    "喜歡": 1
+                },
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {
+                    "馬小莉": 1,
+                    "王小明": 1
+                },
+                "modifier": {
+                    "最": 1
+                },
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "[馬小莉][一定][會]買[衛生紙]": {
+                "contentword": {
+                    "一定": 1,
+                    "衛生紙": 1
+                },
+                "noun": {
+                    "衛生紙": 1
+                },
+                "verb": {},
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {
+                    "馬小莉": 1
+                },
+                "modifier": {
+                    "一定": 1
+                },
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "每個[人][都][會]買[衛生紙]": {
+                "contentword": {
+                    "人": 1,
+                    "衛生紙": 1
+                },
+                "noun": {
+                    "人": 1,
+                    "衛生紙": 1
+                },
+                "verb": {},
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {},
+                "modifier": {},
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            }
+        },
+        "s2f": {
+            "[馬小莉]不喜歡[王小明]": {
+                "contentword": {
+                    "喜歡": 1
+                },
+                "noun": {},
+                "verb": {
+                    "喜歡": 1
+                },
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {
+                    "馬小莉": 1,
+                    "王小明": 1
+                },
+                "modifier": {},
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "[你]買了[衛生紙]": {
+                "contentword": {
+                    "買了": 1,
+                    "衛生紙": 1
+                },
+                "noun": {
+                    "衛生紙": 1
+                },
+                "verb": {
+                    "買了": 1
+                },
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {},
+                "modifier": {},
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "[馬小莉][最]喜歡[王小明]": {
+                "contentword": {
+                    "最": 1,
+                    "喜歡": 1
+                },
+                "noun": {},
+                "verb": {
+                    "喜歡": 1
+                },
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {
+                    "馬小莉": 1,
+                    "王小明": 1
+                },
+                "modifier": {
+                    "最": 1
+                },
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "[馬小莉][一定][會]買[衛生紙]": {
+                "contentword": {
+                    "一定": 1,
+                    "衛生紙": 1
+                },
+                "noun": {
+                    "衛生紙": 1
+                },
+                "verb": {},
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {
+                    "馬小莉": 1
+                },
+                "modifier": {
+                    "一定": 1
+                },
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            },
+            "每個[人][都][會]買[衛生紙]": {
+                "contentword": {
+                    "人": 1,
+                    "衛生紙": 1
+                },
+                "noun": {
+                    "人": 1,
+                    "衛生紙": 1
+                },
+                "verb": {},
+                "time": {},
+                "userdefined": {},
+                "location": {},
+                "person": {},
+                "modifier": {},
+                "color": {},
+                "idiom": {},
+                "chemical": {}
+            }
+        }
+    },
+    "utterance_feature": [
+        "verb",
+        "noun"
+    ],
+    "utterance_threshold": 0.4
+}
