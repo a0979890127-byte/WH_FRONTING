@@ -1,0 +1,223 @@
+{
+    "language": "zh-tw",
+    "type": "advance",
+    "version": {
+        "atk": "v280",
+        "intent": "1.0"
+    },
+    "user_defined": {},
+    "var": {
+        "Expressive_Verb": "(說|說說|開說|照說|接說|反說|妙說|怨說|老說|解說|問說|甫說|還說|答說|教說|拗說|論說|聊說|嗔說|前說|唸說|扯說|笑說|吵說|氣說|常說|紛說|更說|得說|急說|騙說|酸說|邊說|認說|斷說|難得說|回說|猛說|寫說|忙說|微說|嘆說|搶說|哭說|正說|推說|瞪說|掰說|抄說|指說|回|想回|怒回|忙回|笑回|爽回|慌答|冷答|忙答|稱|怒稱|謙稱|佯稱|答稱|供稱|改稱|謊稱|更稱|回稱|聲稱|宣稱|常想|直想|嘟嚷著|怒斥著|喊叫著|說著|叨唸著|喊著|念|叼念|唸|邊唸|猛唸|寫下|喊|高喊|大喊|笑喊|直喊|怒喊|猛喊|齊喊|驚喊|慟喊|哀喊|猛讚|互讚|嗆|怒嗆|酸嗆|反嗆|笑嗆|開嗆|大嗆|直嗆|嗔叫|直叫|暗叫|表達出|供出|唸出|道|嗔道|笑道|叫道|歎道|吼道|喊道|暗虧|直虧|斥|喝斥|直斥|怒斥|笑斥|忙問|發問|偷問|回問|笑問|直問|追問|猛問|哭問|怒問|暗批|反批|痛批|笑呼|急呼|疾呼|嬌呼|狂呼|齊呼|直言|斷言|怒言|笑言|描述|闡述|誇|直誇|怒罵|更罵|喝罵|強調|怒指|允諾|喝令|笑談|嗆明|呼籲|道賀|叫嚷|急駁|哭唱|想過|覺得|猛酸|哭求|鼓吹|怒飆|怒諷|勸|講|怨|曰)"
+    },
+    "utterance": {
+        "馬莉買了書": {
+            "id": "094c9213-9a3c-4fce-81fb-68db22cb4508",
+            "pos": "<ENTITY_person>馬莉</ENTITY_person><VerbP>買了</VerbP><ENTITY_noun>書</ENTITY_noun>",
+            "lexy": {
+                "買了": [
+                    "租了",
+                    "購買了",
+                    "拿了",
+                    "買",
+                    "偷了",
+                    "想買",
+                    "帶了",
+                    "賣了",
+                    "買了",
+                    "借了",
+                    "送了"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>"
+        },
+        "那本書非常暢銷": {
+            "id": "40be38ea-28b1-4b6a-8eeb-c6212bbe9363",
+            "pos": "<ENTITY_DetPhrase>那本</ENTITY_DetPhrase><ENTITY_noun>書</ENTITY_noun><MODIFIER>非常</MODIFIER><ACTION_verb>暢銷</ACTION_verb>",
+            "lexy": {
+                "暢銷": [
+                    "長賣",
+                    "熱播",
+                    "熱銷",
+                    "熱爆",
+                    "賣座",
+                    "榮登",
+                    "暢銷",
+                    "熱賣",
+                    "愛讀",
+                    "大賣",
+                    "高串"
+                ]
+            },
+            "pattern": "<ENTITY_DetPhrase>([^<]+)</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<(?:MODIFIER|ModifierP)>[^<]+</(?:MODIFIER|ModifierP)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        },
+        "每個人都會買帽子": {
+            "id": "ad18b8a2-6015-49ee-92fe-634478aacb3c",
+            "pos": "<ENTITY_DetPhrase>每個</ENTITY_DetPhrase><ENTITY_noun>人</ENTITY_noun><QUANTIFIER>都</QUANTIFIER><MODAL>會</MODAL><ACTION_verb>買</ACTION_verb><ENTITY_noun>帽子</ENTITY_noun>",
+            "lexy": {
+                "買": [
+                    "購買",
+                    "採買",
+                    "買不起",
+                    "買東西",
+                    "買",
+                    "買進",
+                    "賣",
+                    "購得",
+                    "吃",
+                    "採辦",
+                    "收買"
+                ]
+            },
+            "pattern": "<ENTITY_DetPhrase>[^<]+</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>人</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<QUANTIFIER>[^<]+</QUANTIFIER>)?(?:<MODAL>[^<]+</MODAL>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>"
+        },
+        "這朵花馬莉最喜歡": {
+            "id": "4a7d1279-d957-4086-88ba-c11150dde4f5",
+            "pos": "<ENTITY_DetPhrase>這朵</ENTITY_DetPhrase><ENTITY_nouny>花</ENTITY_nouny><ENTITY_person>馬莉</ENTITY_person><MODIFIER>最</MODIFIER><ACTION_verb>喜歡</ACTION_verb>",
+            "lexy": {
+                "喜歡": [
+                    "喜歡",
+                    "疼愛",
+                    "愛戴",
+                    "愛護",
+                    "熱愛",
+                    "崇拜",
+                    "喜愛",
+                    "相愛",
+                    "憐愛",
+                    "愛過",
+                    "深愛"
+                ]
+            },
+            "pattern": "<ENTITY_DetPhrase>([^<]+)</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<(?:MODIFIER|ModifierP)>[^<]+</(?:MODIFIER|ModifierP)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        },
+        "馬莉一定會買帽子": {
+            "id": "1d6b66a1-4917-45d4-99d5-39cafa8cab87",
+            "pos": "<ENTITY_person>馬莉</ENTITY_person><MODIFIER>一定</MODIFIER><MODAL>會</MODAL><ACTION_verb>買</ACTION_verb><ENTITY_noun>帽子</ENTITY_noun>",
+            "lexy": {
+                "買": [
+                    "購買",
+                    "採買",
+                    "買到",
+                    "買",
+                    "買東西",
+                    "買進",
+                    "賣",
+                    "購得",
+                    "買不到",
+                    "採辦",
+                    "收買"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<(?:MODIFIER|ModifierP)>[^<]+</(?:MODIFIER|ModifierP)>)?(?:<MODAL>[^<]+</MODAL>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>"
+        },
+        "李四特別喜歡那本書": {
+            "id": "89618c24-b6c8-4ecd-ad5b-9f6c8f347113",
+            "pos": "<ENTITY_person>李四</ENTITY_person><MODIFIER>特別</MODIFIER><ACTION_verb>喜歡</ACTION_verb><ENTITY_DetPhrase>那本</ENTITY_DetPhrase><ENTITY_noun>書</ENTITY_noun>",
+            "lexy": {
+                "喜歡": [
+                    "喜歡",
+                    "疼愛",
+                    "愛戴",
+                    "愛護",
+                    "熱愛",
+                    "崇拜",
+                    "喜愛",
+                    "相愛",
+                    "憐愛",
+                    "愛過",
+                    "深愛"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<(?:MODIFIER|ModifierP)>[^<]+</(?:MODIFIER|ModifierP)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><ENTITY_DetPhrase>([^<]+)</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>"
+        },
+        "那篇文章，李四從不看": {
+            "id": "5e58b497-7804-4003-beef-0893f5b1edae",
+            "pos": "<ENTITY_DetPhrase>那篇</ENTITY_DetPhrase><ENTITY_noun>文章</ENTITY_noun><ENTITY_person>李四</ENTITY_person><TIME_justtime>從不</TIME_justtime><ACTION_verb>看</ACTION_verb>",
+            "lexy": {
+                "看": [
+                    "探望",
+                    "看守",
+                    "收看",
+                    "看顧",
+                    "看護",
+                    "看望",
+                    "觀看",
+                    "看戲",
+                    "看",
+                    "光顧",
+                    "探看"
+                ]
+            },
+            "pattern": "<ENTITY_DetPhrase>([^<]+)</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<ENTITY_person>[^<]+</ENTITY_person>)?(?:<TIME_(?:holiday|justtime|day|week|month|season|year|decade)>[^<]+</TIME_(?:holiday|justtime|day|week|month|season|year|decade)>){1,10}<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        },
+        "李四讀完文件後就丟掉了": {
+            "id": "11cdb0a9-692d-44f0-bc34-6e8e2470f923",
+            "pos": "<ENTITY_person>李四</ENTITY_person><VerbP>讀完</VerbP><ENTITY_oov>文件</ENTITY_oov><RANGE_locality>後</RANGE_locality><FUNC_inner>就</FUNC_inner><VerbP>丟掉了</VerbP>",
+            "lexy": {
+                "讀完": [
+                    "讀到",
+                    "讀了",
+                    "唸過",
+                    "唸完",
+                    "讀過",
+                    "念了",
+                    "讀完了",
+                    "寫完",
+                    "修完",
+                    "念完",
+                    "讀完"
+                ],
+                "丟掉了": [
+                    "扔掉",
+                    "亂掉",
+                    "亂丟",
+                    "割棄",
+                    "丟開",
+                    "甩掉",
+                    "廢棄",
+                    "丟掉了",
+                    "弄丟",
+                    "丟失",
+                    "丟棄"
+                ]
+            },
+            "pattern": "(?:<ENTITY_person>[^<]+</ENTITY_person>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))><RANGE_(?:locality|period)>[^<]+</RANGE_(?:locality|period)>(?:<FUNC_in(?:ner|ter)>[^<]+</FUNC_in(?:ner|ter)>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        },
+        "那份文件，他拿去丟掉了": {
+            "id": "6408a4c5-8a25-4003-8c04-129a90f77981",
+            "pos": "<ENTITY_DetPhrase>那份</ENTITY_DetPhrase><ENTITY_nouny>文件</ENTITY_nouny><ENTITY_pronoun>他</ENTITY_pronoun><ACTION_verb>拿去</ACTION_verb><VerbP>丟掉了</VerbP>",
+            "lexy": {
+                "拿去": [
+                    "買來",
+                    "買走",
+                    "拿出來",
+                    "燒掉",
+                    "拿走",
+                    "賣掉",
+                    "送去",
+                    "拿來",
+                    "拿去",
+                    "藏起來",
+                    "買下來"
+                ],
+                "丟掉了": [
+                    "甩掉",
+                    "丟掉了",
+                    "丟開",
+                    "丟棄",
+                    "亂掉",
+                    "弄丟",
+                    "割棄",
+                    "丟失",
+                    "廢棄",
+                    "亂丟",
+                    "扔掉"
+                ]
+            },
+            "pattern": "<ENTITY_DetPhrase>([^<]+)</ENTITY_DetPhrase><(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>([^<]+)</(?:UserDefined|ENTITY_(?:nounHead|nouny?|oov))>(?:<ENTITY_pronoun>[^<]+</ENTITY_pronoun>)?<(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)><(?:ACTION_verb|VerbP)>[^<]+</(?:ACTION_verb|VerbP)>"
+        }
+    },
+    "alias": {},
+    "prompt": {},
+    "document": []
+}
